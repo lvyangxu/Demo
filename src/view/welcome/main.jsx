@@ -2,6 +2,7 @@ let React = require("react");
 let ReactDom = require("react-dom");
 let Radio = require("karl-component-radio");
 let Select = require("karl-component-select");
+let Nav = require("karl-component-nav");
 
 let radioOptions = ["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8", "option 9", "option 10", "option 11"];
 let selectOptions = [
@@ -14,15 +15,16 @@ let selectOptions = [
     {id: "o7", name: "option 7", checked: true},
     {id: "o8", name: "option 8", checked: true},
 ];
+let navOptions = ["option 1", "option 2", "option 3"];
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             currentRadioValue: "",
-            currentSelectValue: selectOptions.filter(d=>{
+            currentSelectValue: selectOptions.filter(d=> {
                 return d.checked;
-            }).map(d=>{
+            }).map(d=> {
                 return d.name;
             }).join("，")
         };
@@ -69,9 +71,9 @@ class App extends React.Component {
                 }}/>
                 <div className="current-value">
                     Current Value ：
-                    {this.state.hasOwnProperty("currentSelectValue") ? this.state.currentSelectValue : selectOptions.filter(d=>{
+                    {this.state.hasOwnProperty("currentSelectValue") ? this.state.currentSelectValue : selectOptions.filter(d=> {
                         return d.checked;
-                    }).map(d=>{
+                    }).map(d=> {
                         return d.name;
                     }).join("，")}
                 </div>
@@ -80,6 +82,11 @@ class App extends React.Component {
                     <a className="anchor" href="#nav"></a>
                     Nav
                 </h3>
+                <Nav data={navOptions} height={200}>
+                    <div className="navPanel">nav panel 1，some element...</div>
+                    <div className="navPanel">nav panel 2，some element...</div>
+                    <div className="navPanel">nav panel 3，some element...</div>
+                </Nav>
 
                 <h3>
                     <a className="anchor" href="#table"></a>

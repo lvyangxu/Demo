@@ -2,19 +2,8 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/src/util/http.js" />
-        <item url="file://$PROJECT_DIR$/src/component/radio/radio.js" />
-        <item url="file://$PROJECT_DIR$/src/util/mysql.js" />
-        <item url="file://$PROJECT_DIR$/src/util/myString.js" />
-        <item url="file://$PROJECT_DIR$/src/component/nav/nav.js" />
-        <item url="file://$PROJECT_DIR$/src/view/welcome/main.js" />
-        <item url="file://$PROJECT_DIR$/src/component/table/table.js" />
         <item url="file://$PROJECT_DIR$/gulp.js" />
-        <item url="file://$PROJECT_DIR$/src/util/upload.js" />
-        <item url="file://$PROJECT_DIR$/src/util/xml.js" />
-        <item url="file://$PROJECT_DIR$/src/component/select/select.js" />
-        <item url="file://$PROJECT_DIR$/src/util/cookie.js" />
-        <item url="file://$PROJECT_DIR$/src/util/excel.js" />
+        <item url="file://$PROJECT_DIR$/src/view/welcome/main.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -23,14 +12,14 @@
       <root url="file://$PROJECT_DIR$/src/util/mysql.js" />
       <root url="file://$PROJECT_DIR$/src/util/myString.js" />
       <root url="file://$PROJECT_DIR$/src/component/nav/nav.js" />
-      <root url="file://$PROJECT_DIR$/src/view/welcome/main.js" />
       <root url="file://$PROJECT_DIR$/src/component/table/table.js" />
-      <root url="file://$PROJECT_DIR$/gulp.js" />
       <root url="file://$PROJECT_DIR$/src/util/upload.js" />
       <root url="file://$PROJECT_DIR$/src/util/xml.js" />
       <root url="file://$PROJECT_DIR$/src/component/select/select.js" />
       <root url="file://$PROJECT_DIR$/src/util/cookie.js" />
       <root url="file://$PROJECT_DIR$/src/util/excel.js" />
+      <root url="file://$PROJECT_DIR$/gulp.js" />
+      <root url="file://$PROJECT_DIR$/src/view/welcome/main.js" />
     </CLASSES>
     <SOURCES />
   </library>
