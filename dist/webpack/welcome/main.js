@@ -70,6 +70,16 @@ var App = function (_React$Component) {
                     this.state.hasOwnProperty("currentRadioValue") ? this.state.currentRadioValue : ""
                 ),
                 React.createElement(
+                    "div",
+                    { className: "install" },
+                    "Install"
+                ),
+                React.createElement(
+                    "div",
+                    null,
+                    "$ npm install karl-component-radio"
+                ),
+                React.createElement(
                     "h3",
                     null,
                     React.createElement("a", { className: "anchor", href: "#select" }),
