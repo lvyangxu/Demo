@@ -40,6 +40,8 @@ gulp.task("build", ()=> {
     //image
     gulp.src("src/view/common/image/*")
         .pipe(gulp.dest("dist/welcome/image"));
+    gulp.src("src/view/welcome/image/*")
+        .pipe(gulp.dest("dist/welcome/image"));
     //google font
     gulp.src("src/view/common/font/*")
         .pipe(gulp.dest("dist/welcome"));

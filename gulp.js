@@ -29,6 +29,7 @@ gulp.task("build", function () {
     gulp.src("src/icon/favicon.ico").pipe(gulp.dest("dist/welcome/image"));
     //image
     gulp.src("src/view/common/image/*").pipe(gulp.dest("dist/welcome/image"));
+    gulp.src("src/view/welcome/image/*").pipe(gulp.dest("dist/welcome/image"));
     //google font
     gulp.src("src/view/common/font/*").pipe(gulp.dest("dist/welcome"));
 });

@@ -6,5 +6,7 @@ body {
   body #app .navPanel {
     padding-top: 20px;
     font-family: 'Architects Daughter','Helvetica Neue',Helvetica,Arial,serif; }
+  body #app .react-carousel img {
+    width: 100%; }
 
 /*# sourceMappingURL=index.css.map */

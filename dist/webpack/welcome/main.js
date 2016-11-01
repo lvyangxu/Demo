@@ -13,6 +13,7 @@ var ReactDom = require("react-dom");
 var Radio = require("karl-component-radio");
 var Select = require("karl-component-select");
 var Nav = require("karl-component-nav");
+var Carousel = require("karl-component-carousel");
 
 var radioOptions = ["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8", "option 9", "option 10", "option 11"];
 var selectOptions = [{ id: "o1", name: "option 1", checked: true }, { id: "o2", name: "option 2", checked: true }, { id: "o3", name: "option 3", checked: false }, { id: "o4", name: "option 4", checked: true }, { id: "o5", name: "option 5", checked: true }, { id: "o6", name: "option 6", checked: false }, { id: "o7", name: "option 7", checked: true }, { id: "o8", name: "option 8", checked: true }];
@@ -70,16 +71,6 @@ var App = function (_React$Component) {
                     this.state.hasOwnProperty("currentRadioValue") ? this.state.currentRadioValue : ""
                 ),
                 React.createElement(
-                    "div",
-                    { className: "install" },
-                    "Install"
-                ),
-                React.createElement(
-                    "div",
-                    null,
-                    "$ npm install karl-component-radio"
-                ),
-                React.createElement(
                     "h3",
                     null,
                     React.createElement("a", { className: "anchor", href: "#select" }),
@@ -128,6 +119,36 @@ var App = function (_React$Component) {
                         "div",
                         { className: "navPanel" },
                         "nav panel 3，some element..."
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    React.createElement("a", { className: "anchor", href: "#carousel" }),
+                    "Carousel"
+                ),
+                React.createElement(
+                    Carousel,
+                    null,
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement("img", { src: "image/1.jpg" })
+                    ),
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement("img", { src: "image/2.jpg" })
+                    ),
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement("img", { src: "image/3.jpg" })
+                    ),
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement("img", { src: "image/4.jpg" })
                     )
                 ),
                 React.createElement(

@@ -3,6 +3,7 @@ let ReactDom = require("react-dom");
 let Radio = require("karl-component-radio");
 let Select = require("karl-component-select");
 let Nav = require("karl-component-nav");
+let Carousel = require("karl-component-carousel");
 
 let radioOptions = ["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8", "option 9", "option 10", "option 11"];
 let selectOptions = [
@@ -87,6 +88,17 @@ class App extends React.Component {
                     <div className="navPanel">nav panel 2，some element...</div>
                     <div className="navPanel">nav panel 3，some element...</div>
                 </Nav>
+
+                <h3>
+                    <a className="anchor" href="#carousel"></a>
+                    Carousel
+                </h3>
+                <Carousel>
+                    <div><img src="image/1.jpg"/></div>
+                    <div><img src="image/2.jpg"/></div>
+                    <div><img src="image/3.jpg"/></div>
+                    <div><img src="image/4.jpg"/></div>
+                </Carousel>
 
                 <h3>
                     <a className="anchor" href="#table"></a>
