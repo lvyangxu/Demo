@@ -14,6 +14,7 @@ var Radio = require("karl-component-radio");
 var Select = require("karl-component-select");
 var Nav = require("karl-component-nav");
 var Carousel = require("karl-component-carousel");
+var Chart = require("karl-component-chart");
 
 var radioOptions = ["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8", "option 9", "option 10", "option 11"];
 var selectOptions = [{ id: "o1", name: "option 1", checked: true }, { id: "o2", name: "option 2", checked: true }, { id: "o3", name: "option 3", checked: false }, { id: "o4", name: "option 4", checked: true }, { id: "o5", name: "option 5", checked: true }, { id: "o6", name: "option 6", checked: false }, { id: "o7", name: "option 7", checked: true }, { id: "o8", name: "option 8", checked: true }];
@@ -53,6 +54,15 @@ var App = function (_React$Component) {
             return React.createElement(
                 "div",
                 null,
+                React.createElement(
+                    "h3",
+                    null,
+                    React.createElement("a", { className: "anchor", href: "#chart" }),
+                    "Chart"
+                ),
+                React.createElement(Chart, { title: "chart", yAxisText: "kg", x: "date",
+                    y: [{ id: "apple", name: "apple" }, { id: "banana", name: "banana" }, { id: "pear", name: "pear" }],
+                    data: [{ date: "2016-9-11", apple: 1, banana: 2, pear: 3 }, { date: "2016-9-13", apple: 0.03, banana: 3, pear: 2 }, { date: "2016-9-12", apple: 5, banana: 47 }, { date: "2016-9-14", apple: 0.05, banana: 7, pear: 4 }, { date: "2016-9-15", apple: 0.08, banana: 6 }] }),
                 React.createElement(
                     "h3",
                     null,
@@ -150,12 +160,6 @@ var App = function (_React$Component) {
                         null,
                         React.createElement("img", { src: "image/4.jpg" })
                     )
-                ),
-                React.createElement(
-                    "h3",
-                    null,
-                    React.createElement("a", { className: "anchor", href: "#table" }),
-                    "Table"
                 )
             );
         }

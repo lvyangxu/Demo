@@ -4,6 +4,7 @@ let Radio = require("karl-component-radio");
 let Select = require("karl-component-select");
 let Nav = require("karl-component-nav");
 let Carousel = require("karl-component-carousel");
+let Chart = require("karl-component-chart");
 
 let radioOptions = ["option 1", "option 2", "option 3", "option 4", "option 5", "option 6", "option 7", "option 8", "option 9", "option 10", "option 11"];
 let selectOptions = [
@@ -42,6 +43,24 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <h3>
+                    <a className="anchor" href="#chart"></a>
+                    Chart
+                </h3>
+                <Chart title="chart" yAxisText="kg" x="date"
+                       y={[
+                           {id: "apple", name: "apple"},
+                           {id: "banana", name: "banana"},
+                           {id: "pear", name: "pear"},
+                       ]}
+                       data={[
+                           {date: "2016-9-11", apple: 1, banana: 2, pear: 3},
+                           {date: "2016-9-13", apple: 0.03, banana: 3, pear: 2},
+                           {date: "2016-9-12", apple: 5, banana: 47},
+                           {date: "2016-9-14", apple: 0.05, banana: 7, pear: 4},
+                           {date: "2016-9-15", apple: 0.08, banana: 6}
+                       ]}/>
+
                 <h3>
                     <a className="anchor" href="#radio"></a>
                     Radio
@@ -100,10 +119,8 @@ class App extends React.Component {
                     <div><img src="image/4.jpg"/></div>
                 </Carousel>
 
-                <h3>
-                    <a className="anchor" href="#table"></a>
-                    Table
-                </h3>
+
+
             </div>
         )
     }
